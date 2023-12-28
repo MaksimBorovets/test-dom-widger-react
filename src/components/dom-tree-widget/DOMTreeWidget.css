@@ -1,0 +1,72 @@
+.dom-tree-widget {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 450px;
+  height: calc(100% - 20px);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 10000;
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  transition: right 0.3s, width 0.3s;
+}
+
+.dom-tree-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.dom-tree-list li {
+  cursor: pointer;
+}
+
+.dom-tree-list li:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dom-tree-list span {
+  line-height: 1.5;
+  display: block;
+}
+
+.highlight {
+  background-color: yellow !important;
+}
+
+.dom-tree-widget.hidden {
+  right: -20px;
+  width: 0;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 47%;
+  left: -45px;
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.toggle-button:hover {
+  background-color: #ddd;
+}
